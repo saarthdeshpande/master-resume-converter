@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from 'react-router-dom'
 import DetailedCard from "../../components/detailed-card/detailed-card.component";
 import {Breadcrumb} from "react-bootstrap";
+import {MdAddBox} from "react-icons/md";
 
 const ExperiencePage = (props) => {
     return (
@@ -17,6 +18,7 @@ const ExperiencePage = (props) => {
                 <DetailedCard name={'GRE Verbal Prep'} completed={false} techStack={[]} domain={['Web Development', 'Full Stack Web']} description={'GRE Desc'} />
                 <DetailedCard name={'PICT Attendance Bot'} completed={true} techStack={[]} domain={['Web Development', 'Full Stack Web']} description={'PICT Desc'} />
             </div>
+            <MdAddBox style={{position: 'absolute', right: '2vw', bottom: '2vh'}} size={'100'} />
         </>
     )
 }

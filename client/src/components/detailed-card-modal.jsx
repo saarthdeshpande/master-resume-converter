@@ -24,7 +24,6 @@ class ProjectModal extends React.Component {
             this.setState({background: localStorage.theme === 'light' ? '#FAFAFA' : '#363537'})
             this.setState({borderColor: localStorage.theme !== 'light' ? '#FAFAFA' : '#363537'})
         }
-        console.log(this.props)
         return (
             <>
                 <Modal className={'pModal'}
